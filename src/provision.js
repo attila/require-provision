@@ -58,7 +58,7 @@ define(['module'], function(module, undefined) {
     // Check if there are tests to evaluate
     if (config.provision !== undefined &&
         config.provision[name] !== undefined &&
-        config.provision[name].build !== undefined) {
+        config.provision[name].test !== undefined) {
       var test = config.provision[name].test;
       result = typeof test === 'function' ? test.apply(this) : !!test;
     }
