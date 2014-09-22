@@ -41,9 +41,8 @@ define(['module'], function(module, undefined) {
     }
     else {
       // Running in a build environment.
-      var shouldBuild = this.shouldBuild(name, config),
-        listed = config.paths[name] !== undefined;
-      if (shouldBuild && listed) {
+      var shouldBuild = this.shouldBuild(name, config);
+      if (shouldBuild) {
         req([name], function(value) {
           onload(value);
         });
