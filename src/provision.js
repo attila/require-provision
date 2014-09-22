@@ -1,5 +1,5 @@
 /**
- * Provision.js v0.1.0 - A conditional require.js loader plugin.
+ * Provision.js v0.1.1 - A conditional require.js loader plugin.
  *
  * This plugin evaluates tests for each configured module and loads them only if
  * those tests pass. If a test fails, it does not load and does not execute the
